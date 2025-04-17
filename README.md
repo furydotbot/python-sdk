@@ -40,7 +40,7 @@ pip install -e .
 ## Quick Start
 
 ```python
-from fury_sdk import FurySDK
+from fury import FurySDK
 
 # Initialize the SDK
 fury = FurySDK("https://solana.fury.bot", api_key="your_api_key_here")  # API key is optional
@@ -59,7 +59,7 @@ print(f"Generated mint key: {mint_key['pubkey']}")
 ### Buy Tokens
 
 ```python
-from fury_sdk import FurySDK, Protocol
+from fury import FurySDK, Protocol
 
 fury = FurySDK("https://solana.fury.bot")
 
@@ -77,7 +77,7 @@ print(f"Transaction data: {result['transactions']}")
 ### Complete Buy Flow with Transaction Signing
 
 ```python
-from fury_sdk import FurySDK, Protocol
+from fury import FurySDK, Protocol
 from solana.keypair import Keypair
 from solana.transaction import Transaction
 import base58
@@ -122,7 +122,7 @@ print(f"Transaction signatures: {send_result['results']}")
 ### Create a New Token
 
 ```python
-from fury_sdk import FurySDK, TokenMetadata, create_token_config
+from fury import FurySDK, TokenMetadata, create_token_config
 
 fury = FurySDK("https://solana.fury.bot")
 
@@ -153,7 +153,7 @@ print(f"Token created: {result}")
 ### Distribute Tokens to Multiple Wallets
 
 ```python
-from fury_sdk import FurySDK, Recipient
+from fury import FurySDK, Recipient
 
 fury = FurySDK("https://solana.fury.bot")
 
@@ -207,7 +207,7 @@ print(f"Distribution transactions: {result['transactions']}")
 ## Error Handling
 
 ```python
-from fury_sdk import FurySDK, FuryAPIError
+from fury import FurySDK, FuryAPIError
 
 fury = FurySDK("https://solana.fury.bot")
 

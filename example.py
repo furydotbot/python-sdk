@@ -2,7 +2,7 @@
 Example showing how to buy tokens on Solana using the FURY SDK,
 including signing the transactions and sending them.
 """
-from furySDK import FurySDK, FuryAPIError, Protocol
+from fury import FurySDK, FuryAPIError, Protocol
 from solana.keypair import Keypair
 from solana.transaction import Transaction
 from solana.rpc.types import TxOpts

@@ -26,7 +26,7 @@ Simple usage example:
     print(f"Transaction signatures: {result['transactions']}")
 """
 
-from furySDK import FurySDK
+from fury import FurySDK
 from .exceptions import FurySDKError, FuryAPIError, ValidationError
 from .models import (
     TokenMetadata, 
