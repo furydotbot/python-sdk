@@ -32,7 +32,7 @@ pip install solana base58  # Only needed for transaction signing
 pip install fury-sdk
 
 # From source
-git clone https://github.com/your-username/fury-sdk.git
+git clone https://github.com/furydotbot/python-sdk.git
 cd fury-sdk
 pip install -e .
 ```
@@ -43,7 +43,7 @@ pip install -e .
 from fury import FurySDK
 
 # Initialize the SDK
-fury = FurySDK("https://solana.fury.bot", api_key="your_api_key_here")  # API key is optional
+fury = FurySDK("https://solana.fury.bot")
 
 # Check API health
 health = fury.health_check()
