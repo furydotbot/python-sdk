@@ -12,7 +12,7 @@ import json
 def main():
     # Initialize the SDK with your API base URL
     # You can add your API key as the second parameter if required
-    fury = FurySDK("https://api.fury.bot")
+    fury = FurySDK("https://solana.fury.bot")
     
     # Wallet address(es) that will be buying tokens
     wallet_addresses = ["FuRytmqsoo4mKQAhNXoB64JD4SsiVqxYkUKC6i1VaBot"]

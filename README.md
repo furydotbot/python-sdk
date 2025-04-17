@@ -43,7 +43,7 @@ pip install -e .
 from fury_sdk import FurySDK
 
 # Initialize the SDK
-fury = FurySDK("https://api.fury.bot", api_key="your_api_key_here")  # API key is optional
+fury = FurySDK("https://solana.fury.bot", api_key="your_api_key_here")  # API key is optional
 
 # Check API health
 health = fury.health_check()
@@ -61,7 +61,7 @@ print(f"Generated mint key: {mint_key['pubkey']}")
 ```python
 from fury_sdk import FurySDK, Protocol
 
-fury = FurySDK("https://api.fury.bot")
+fury = FurySDK("https://solana.fury.bot")
 
 # Buy tokens
 result = fury.tokens.buy(
@@ -84,7 +84,7 @@ import base58
 import json
 
 # Initialize SDK
-fury = FurySDK("https://api.fury.bot")
+fury = FurySDK("https://solana.fury.bot")
 
 # Load wallet
 with open('wallet_keypair.json', 'r') as f:
@@ -124,7 +124,7 @@ print(f"Transaction signatures: {send_result['results']}")
 ```python
 from fury_sdk import FurySDK, TokenMetadata, create_token_config
 
-fury = FurySDK("https://api.fury.bot")
+fury = FurySDK("https://solana.fury.bot")
 
 # Generate a mint key
 mint_key = fury.utilities.generate_mint()
@@ -155,7 +155,7 @@ print(f"Token created: {result}")
 ```python
 from fury_sdk import FurySDK, Recipient
 
-fury = FurySDK("https://api.fury.bot")
+fury = FurySDK("https://solana.fury.bot")
 
 # Define recipients
 recipients = [
@@ -209,7 +209,7 @@ print(f"Distribution transactions: {result['transactions']}")
 ```python
 from fury_sdk import FurySDK, FuryAPIError
 
-fury = FurySDK("https://api.fury.bot")
+fury = FurySDK("https://solana.fury.bot")
 
 try:
     result = fury.tokens.buy(...)
